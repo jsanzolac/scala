@@ -4,17 +4,17 @@ object Main extends App {
 
   def sqrt(x:Double) = {
 
-    def sqrIter(guess: Double, x: Double): Double = 
-      if (isGoodEnough(guess, x)) guess
-      else sqrIter(improve(guess, x), x)
+    def sqrIter(guess: Double): Double = 
+      if (isGoodEnough(guess)) guess
+      else sqrIter(improve(guess))
 
-    def isGoodEnough(guess: Double, x: Double) =
+    def isGoodEnough(guess: Double) =
       abs(guess * guess - x) / x < 0.001
 
-    def improve(guess: Double, x:Double) = 
+    def improve(guess: Double) = 
     (guess + x / guess ) / 2 
 
-    sqrIter(1.0, x)
+    sqrIter(1.0)
 
   }
 
