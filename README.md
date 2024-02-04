@@ -1,4 +1,6 @@
-# scala
+# SCALA STUFF
+
+Just a repositiry to save my Scala learning journey. 
 
 ## 0 - Recursive functions
 Practice code from courses.
